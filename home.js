@@ -1,5 +1,5 @@
 looker.plugins.visualizations.add({
-    id: "home",
+    id: "home_conselho",
     label: "Home",
     options: {
       
@@ -66,6 +66,11 @@ looker.plugins.visualizations.add({
             #vis {
                 overflow: hidden;
             }
+
+            .card:hover {
+                scale: 1.1;
+                box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+            } 
         </style>
 
         <div style="overflow-y: hidden;position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;
