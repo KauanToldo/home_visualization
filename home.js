@@ -7,6 +7,11 @@ looker.plugins.visualizations.add({
     create: function(element, config) {
       this._tableContainer = element.appendChild(document.createElement("div"));
       this._tableContainer.innerHTML = `
+        <style>
+            #vis {
+                overflow: hidden;
+            }
+        </style>
 
         <div style="overflow-y: hidden;position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;
         background-image: url(https://storage.googleapis.com/looker_styles_servopa/imagens/fundo_servopa.png);
