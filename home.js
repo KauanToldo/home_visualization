@@ -6,11 +6,7 @@ looker.plugins.visualizations.add({
     },
     create: function(element, config) {
       this._tableContainer = element.appendChild(document.createElement("div"));
-    },
-    // Render in response to the data or settings changing
-    updateAsync: function(data, element, config, queryResponse, details, done) {
-        this.clearErrors();
-        this._tableContainer.innerHTML = `
+      this._tableContainer.innerHTML = `
 
         <div style="position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;
         background-image: url(https://storage.googleapis.com/looker_styles_servopa/imagens/fundo_servopa.png);
@@ -56,5 +52,9 @@ looker.plugins.visualizations.add({
             </div>
 
         </div>`;
+    },
+    // Render in response to the data or settings changing
+    updateAsync: function(data, element, config, queryResponse, details, done) {
+        this.clearErrors();
 
 }});
