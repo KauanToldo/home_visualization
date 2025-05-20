@@ -102,5 +102,6 @@ looker.plugins.visualizations.add({
             </div>
 
         </div>`;
+        done();
 
 }});
