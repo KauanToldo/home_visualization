@@ -10,9 +10,13 @@ looker.plugins.visualizations.add({
     // Render in response to the data or settings changing
     updateAsync: function(data, element, config, queryResponse, details, done) {
         this.clearErrors();
-        this._tableContainer.innerHTML = `<body background="https://storage.googleapis.com/looker_styles_servopa/imagens/fundo_servopa.png">
+        this._tableContainer.innerHTML = `
 
-        <div style="position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;">
+        <div style="position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;
+        background-image: url(https://storage.googleapis.com/looker_styles_servopa/imagens/fundo_servopa.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;">
             <div style="height: 8vh; width: 100%; padding: 25px 45px; display: flex; align-items: center;">
             <img id="logo" src="https://gruposervopa.com.br/themes/theme-grupo-servopa/assets/img/logos/servopa-grupo-branco.svg" alt="Logo" style="width: 150px;">
             </div>
@@ -51,8 +55,6 @@ looker.plugins.visualizations.add({
             </div>
             </div>
 
-        </div>
-
-        </body>`;
+        </div>`;
 
 }});
