@@ -68,7 +68,8 @@ looker.plugins.visualizations.add({
             }
 
             .card:hover {
-                scale: 1.1;
+                scale: 1.05;
+                transition: .5s ease;
                 box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
             } 
         </style>
