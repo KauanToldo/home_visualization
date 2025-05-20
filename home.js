@@ -69,9 +69,13 @@ looker.plugins.visualizations.add({
 
             .card:hover {
                 scale: 1.05;
-                transition: .5s ease;
+                transition: .2s ease;
                 box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
-            } 
+            }
+            
+            .card {
+                transition: .2s ease;
+            }
         </style>
 
         <div style="overflow-y: hidden;position: relative;z-index: 5; width: 100%; height: 100vh; margin: 0; padding: 0; overflow: hidden; box-sizing: border-box; font-family: 'Montserrat', sans-serif;;
