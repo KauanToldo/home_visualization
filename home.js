@@ -97,7 +97,7 @@ looker.plugins.visualizations.add({
             }
 
             body {
-                width: 100vw !important;
+                width: 100% !important;
             }
         </style>
 
@@ -110,7 +110,7 @@ looker.plugins.visualizations.add({
                 background-repeat: no-repeat;">
                 <img id="logo" src="https://gruposervopa.com.br/themes/theme-grupo-servopa/assets/img/logos/servopa-grupo-branco.svg" alt="Logo" style="width: 150px; position: absolute; top: 30px; left: 45px;">
 
-                <div style="display: flex; align-items: center; justify-content: center;">
+                <div style="display: flex; align-items: center; justify-content: center; margin: 50px 50px;">
                 <div style="text-align: center; max-width: 70%">
                     <span style="color: white; margin: 0; font-weight: normal;">Olá, seja bem vindo(a) ao</span>
                     <h1 style="margin-top: 10px;margin-bottom: 30px; color: white;">Painel do Conselho</h1>
