@@ -94,11 +94,15 @@ looker.plugins.visualizations.add({
                 margin: 0 !important;
                 padding: 0 !important;
             }
+
+            body {
+                width: 100vw !important;
+            }
         </style>
 
         <body style="margin: 0; padding: 0; box-sizing: border-box;">
 
-            <div style="position: relative; z-index: 5; width: 100%; height: 100vh; font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; align-items: center;
+            <div style="position: relative; z-index: 5; width: 100%; height: 100vh; font-family: 'Montserrat', sans-serif; display: flex; justify-content: center; align-items: center; padding: 100px 50px;
                 background-image: url(https://storage.googleapis.com/looker_styles_servopa/imagens/fundo_servopa.png);
                 background-position: center;
                 background-size: cover;
