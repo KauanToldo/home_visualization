@@ -16,6 +16,12 @@ looker.plugins.visualizations.add({
             
             .card {
                 transition: .2s ease;
+                cursor: pointer;
+            }
+
+            #vis {
+                margin: 0;
+                padding: 0;
             }
         </style>
 
@@ -67,7 +73,7 @@ looker.plugins.visualizations.add({
             </body>`;
     },
 
-    
+
     // Render in response to the data or settings changing
     updateAsync: function(data, element, config, queryResponse, details, done) {
         this.clearErrors();
