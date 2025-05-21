@@ -20,8 +20,8 @@ looker.plugins.visualizations.add({
             }
 
             #vis {
-                margin: 0;
-                padding: 0;
+                margin: 0 !important;
+                padding: 0 !important;
             }
         </style>
 
@@ -87,6 +87,12 @@ looker.plugins.visualizations.add({
             
             .card {
                 transition: .2s ease;
+                cursor: pointer;
+            }
+
+            #vis {
+                margin: 0 !important;
+                padding: 0 !important;
             }
         </style>
 
